@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wildlife Sanctuaries Image Gallery</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#CFA16E;  /* Light brown background */
+  color:#fff;
+  text-align:center;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+header{
+  background:#A0522D;
+  color:#fff;
+  padding:20px;
+  font-size:24px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr); /* 3 images per row */
+  gap:15px;
+  max-width:960px;
+  margin:30px auto;
+}
+
+.gallery a{
+  position:relative;
+  display:block;
+}
+
+.gallery img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+  transition:.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 10px #fff;
+}
+
+.lightbox{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.85);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  backdrop-filter:blur(5px);
+}
+
+.lightbox img{
+  width:60%;
+  border:4px solid #fff;
+  border-radius:10px;
+}
+
+.lightbox:target{
+  display:flex;
+}
+
+.close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  color:#fff;
+  font-size:30px;
+  text-decoration:none;
+}
+
+footer{
+  margin-top:auto;
+  background:#A0522D;
+  color:#fff;
+  padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header><b><u>Interactive Wildelife Gallery</u></b></header>
+
+<div class="gallery">
+<a href="#i7"><img src="https://uploads.onecompiler.io/44bx5f3er/44cbknsm4/Screenshot_20260201_195939_Google.jpg"></a>
+<a href="#i2"><img src="https://uploads.onecompiler.io/44bx5f3er/44cbk32nz/Screenshot_20260201_194743_Google.jpg"></a>
+<a href="#i4"><img src="https://uploads.onecompiler.io/44bx5f3er/44c86an5n/Screenshot_20260131_161653_Google.jpg"></a>
+<a href="#i5"><img src="https://uploads.onecompiler.io/44bx5f3er/44cbapbvm/Screenshot_20260201_173857_Google.jpg"></a>
+<a href="#i6"><img src="https://uploads.onecompiler.io/44bx5f3er/44cbapbvm/Screenshot_20260201_173825_Google.jpg"></a>
+<a href="#i3"><img src="https://uploads.onecompiler.io/44bx5f3er/44cbkdzba/Screenshot_20260201_195533_Google.jpg"></a>
+<a href="#i1"><img src="https://uploads.onecompiler.io/44bx5f3er/44c7xejes/Screenshot_20260131_145847_Google.jpg"></a>
+</div>
+
+<div id="i1" class="lightbox"><a href="#" class="close">&times;</a>
+<img src="https://uploads.onecompiler.io/44bx5f3er/44c7xejes/Screenshot_20260131_145847_Google.jpg"></div>
+
+<div id="i2" class="lightbox"><a href="#" class="close">&times;</a>
+<img src="https://uploads.onecompiler.io/44bx5f3er/44cbk32nz/Screenshot_20260201_194743_Google.jpg"></div>
+
+<div id="i3" class="lightbox"><a href="#" class="close">&times;</a>
+<img src="https://uploads.onecompiler.io/44bx5f3er/44cbkdzba/Screenshot_20260201_195533_Google.jpg"></div>
+
+<div id="i4" class="lightbox"><a href="#" class="close">&times;</a>
+<img src="https://uploads.onecompiler.io/44bx5f3er/44c86an5n/Screenshot_20260131_161653_Google.jpg"></div>
+
+<div id="i5" class="lightbox"><a href="#" class="close">&times;</a>
+<img src="https://uploads.onecompiler.io/44bx5f3er/44cbapbvm/Screenshot_20260201_173857_Google.jpg"></div>
+
+<div id="i6" class="lightbox"><a href="#" class="close">&times;</a>
+<img src="https://uploads.onecompiler.io/44bx5f3er/44cbapbvm/Screenshot_20260201_173825_Google.jpg"></div>
+
+<div id="i7" class="lightbox"><a href="#" class="close">&times;</a>
+<img src="https://uploads.onecompiler.io/44bx5f3er/44cbknsm4/Screenshot_20260201_195939_Google.jpg"></div>
+
+<footer>
+<i>© 2026  Designed By Shreya T Y</i>
+</footer>
+
+</body>
+</html>
